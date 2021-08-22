@@ -4,26 +4,34 @@ using namespace std;
 class fn1{
 private:
     int a=1,b=2;
+    int x,y;
 public:
     int c;
     void out(){
         cout<<"fdFDSF"<<endl;
     }
-    void display(){
+    void given_P(){
     cout<<c<<endl;
     }
-    void in(){
+    void pri(){
     cout<<a<<" "<<b;
     }
+    void main_dc(int p,int q){
+    cout<<endl<<p<<" "<<q;
+    }
+
 };
 
 int main()
 {
-    fn1 a1;
-    a1.out();
-    a1.c=68;
-    a1.display();
+    fn1 a;
+    a.out();
+    a.c=68;
+    a.given_P();
    // a1.a=12;  cannot assign value to a because it is private
-    a1.in();
+    a.pri();
+    a.main_dc(33,44);
+
     return 0;
 }
+
